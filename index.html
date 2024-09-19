@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Characters</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to your CSS -->
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <form id="accountForm" autocomplete="off">
+                <h1>Genshin Character</h1>
+                <h2>Information</h2>
+                <div class="inputbox">
+                    <input type="text" id="Character" required autocomplete="off">
+                    <span>Character:</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Named" required autocomplete="off">
+                    <span>Named:</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Quality" required autocomplete="off">
+                    <span>Quality:</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Element" required autocomplete="off">
+                    <span>Element:</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Weapon" required autocomplete="off">
+                    <span>Weapon:</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Region" required autocomplete="off">
+                    <span>Region:</span>
+                </div>
+                <button type="submit" class="sub">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="download" class="download-btn">Download</button>
+
+    <!-- Load the xlsx library before your script -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.17.0/dist/xlsx.full.min.js"></script>
+    <script type="module" src="connect.js"></script>
+</body>
+</html>
